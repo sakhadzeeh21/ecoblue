@@ -1,0 +1,54 @@
+	/* TAGS		*/
+			.tagDiv {			WIDTH:100%;	 MARGIN: 10PX AUTO;	TEXT-ALIGN: LEFT;	PADDING:	10PX;	BORDER-RADIUS: 5PX; 	
+						/*	background-color: PURPLE!important;	COLOR: #FFF!important; 	*/}	
+			.addTagDiv { WIDTH:70%;	 height:160px; MARGIN: 10PX AUTO;	TEXT-ALIGN: LEFT;	PADDING:	10PX;	BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX; 
+								background-color: WHITE!important;	 }
+				.addTag { height:60px; MARGIN: 10PX AUTO;	TEXT-ALIGN: LEFT;	PADDING:	10PX;	BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX; 
+								background-color: blue!important;	 }
+					.addTag img {    width: 40px; height:40px; align:left; border-radius: 50%;  }
+								
+					hr{	height:2px; background-color: green!important;}
+				.addtagFormDiv	{		WIDTH:70%;	  MARGIN: 10PX AUTO;	TEXT-ALIGN: LEFT;	PADDING:	10PX;	BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX; 
+											background-color: WHITE!important;	COLOR: CADETBLUE!important;	 display:none; }
+							.TagGroup:before, .TagGroup:after	{	content:"";display:table;clear:both; 		}
+							.TagGroup LABEL {	DISPLAY: inline-block;	TEXT-ALIGN: LEFT; 	MARGIN: 3PX;	FONT-SIZE: 1.2em ;	FONT-WEIGHT: BOLD;	}	
+							 #tagColor {	DISPLAY: inline-block;		HEIGHT: 25PX;	WIDTH: 80%;	BORDER-STYLE: NONE; background-color: #EEF!important;}	
+							.TagGroup INPUT  {	HEIGHT: 30PX;	WIDTH: 80%; MARGIN: 2PX ; PADDING: 2PX 10PX; FONT-SIZE: 16PX; BORDER-STYLE: NONE NONE OUTSET NONE; BORDER-WIDTH: 2PX; BORDER-COLOR:BLACK;  float: right;  }	
+							.TagGroup SELECT  {	HEIGHT: 35PX;	WIDTH: 85%; PADDING: 2PX 10PX; FONT-SIZE: 16PX; BORDER-RADIUS: 5PX; 	BORDER: 1PX SOLID GRAY;  float: right;}	
+							.TagGroup TEXTAREA  {		WIDTH: 80%; MARGIN: 5PX ; PADDING: 5PX 10PX; FONT-SIZE: 16PX; 	BORDER-STYLE: NONE NONE OUTSET none ; BORDER-WIDTH: 2PX; BORDER-COLOR:BLACK; float: right;}	
+							.area:before, .area:after	{	content:"";display:table;clear:both; 		}
+							.area		{	DISPLAY: block;  	WIDTH: 100%;   }// background-color: green!important;
+							.btn:before, .btn:after	{	content:"";display:table;clear:both; 		}
+							.BTN {  	MARGIN: 10PX; PADDING: 10PX 20px;	FONT-SIZE: 15PX;	COLOR: WHITE;	BACKGROUND: #5F9EA0;	BORDER: NONE;  BORDER-RADIUS: 10PX;  	 float: right;}
+							
+							.TagGroup1:before, .TagGroup1:after	{	content:"";display:table;clear:both; 		}
+							.TagGroup1 {	float: left;  padding: 5px;  width: 32%; margin-left:auto;	margin-right:auto;}	
+									.TagGroup1 LABEL {	DISPLAY: inline-block;	TEXT-ALIGN: LEFT; 	MARGIN: 2PX;	FONT-SIZE: 1.2em ;	FONT-WEIGHT: BOLD;	}	
+									.TagGroup1 INPUT  {	HEIGHT: 30PX;	WIDTH: 65%; MARGIN: 1PX ; PADDING: 2PX 10PX; FONT-SIZE: 16PX; BORDER-RADIUS: 5PX; 	BORDER: 1PX SOLID GRAY; float: right;  }	
+									.TagGroup1 SELECT  {	background-color: white!important; HEIGHT: 35PX;	WIDTH: 55%; PADDING: 2PX 10PX; FONT-SIZE: 16PX; BORDER-RADIUS: 5PX; 	BORDER: 1PX SOLID GRAY;  float: right;}	
+				
+				// .tagFormDiv:before, .tagFormDiv:after	{	content:"";display:table;clear:both; 		}							
+				.history	{		WIDTH:70%;	HEIGHT: 150PX;  MARGIN: 10PX AUTO;	TEXT-ALIGN: LEFT;	PADDING:	10PX;	BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX; 
+											background-color: CADETBLUE!important;	COLOR: WHITE!important; }
+					#searchContainer{  background: #0048AA ;	display: grid; 	align-items: center; 	PADDING: 0PX	10PX; MARGIN:0 0px 10PX 5PX; 
+						  border-radius: 10px 0 0 0 ;	box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75) ;	z-index: 1;	}
+					#searchContainer input{ 	color: #eee;	outline: none;  font-weight: bold; border-radius: 2px; height: 30px;
+							border: 0; padding-left: 48px; padding-right: 20px; font-size: 1.4rem; 		background: url('images/Search.png') no-repeat rgba(255, 255, 255, 0.3 )  ; 
+							background-position: 15px center; background-size: 20px 20px; 
+					}
+					#searchContainer input::placeholder{ color:#ddd;	font-weight: bold;  }
+	
+										
+											
+				// .tagFormDiv:before, .tagFormDiv:after	{	content:"";display:table;clear:both; 		}							
+				.tagFormDiv	{	  width:70%;  MARGIN: 5PX AUTO;	TEXT-ALIGN: LEFT;	PADDING:5PX 5PX 20PX 10PX;	BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX; 
+									COLOR: #FFF!important;	}	
+							.messageTable	{	}	
+								 .RPLYBTN	{  TEXT-DECORATION: NONE;	PADDING: 2PX 3PX; margin: 10px 5px;	BACKGROUND: #2E8B57;	COLOR: WHITE;	BORDER-RADIUS:	3PX; 	}	
+								.DLTBTN 	{		TEXT-DECORATION: NONE;	PADDING: 2PX 3PX;	margin: 5px;	 BACKGROUND: #800000;	COLOR: WHITE;	BORDER-RADIUS:	3PX; }
+								.VWCART	{		TEXT-DECORATION: NONE;	PADDING: 2PX 3PX;	margin: 5px;	 BACKGROUND: #65F;	COLOR: WHITE;	BORDER-RADIUS:	3PX; }
+								.VWPSTS{		TEXT-DECORATION: NONE;	PADDING: 2PX 3PX;	margin: 5px;	 BACKGROUND: #E4D;	COLOR: WHITE;	BORDER-RADIUS:	3PX; }
+				.msg	{		WIDTH:45%;	margin: 30px auto;	padding: 10px;	border-radius: 5px;	color: #3c763d;	background: #dff0d8;  border: 1px solid #3c763d;  text-align: center;	}
+				
+				
+		
