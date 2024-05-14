@@ -1,0 +1,64 @@
+
+
+<STYLE>	
+			:root {
+				--main-blue: #90caf9;
+				--main-white: #fff;
+				--main-grey: rgba(255, 255, 255, 0.23);
+				--main-dark-grey: #121212;
+				--main-ease: cubic-bezier(.65,.05,.36,1);
+			}
+			/* OUTLINED INPUT STYLES */
+			.outlined-input {    position: relative;}
+			.outlined-input input, .outlined-input select {    color: var(--main-white);    height: 3rem;    outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+				background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 20px;    transition: .1s var(--main-ease);
+			}
+			.outlined-input label {    position: absolute;    top: 50%;    left: 5%;    transform: translateY(-50%);    background-color: transparent;    color: rgba(255, 255, 255, 0.5);
+				text-align: center;    transition: .2s var(--main-ease);    font-size: 1.5rem;    pointer-events: none;    padding: 0 5px;  
+			}
+			.outlined-input input:not(:placeholder-shown) ~ label,.outlined-input input:focus ~ label {    top: 0px;    left: 10px;    font-size: 1rem;}
+			.outlined-input select:not(:placeholder-shown) ~ label,.outlined-input select:focus ~ label {    top: 0px;    left: 10px;    font-size: 1rem;}
+			.outlined-input input:focus , .outlined-input select:focus{    outline: 1px solid var(--main-blue) !important;}
+			.outlined-input input:hover, .outlined-input select:hover {    outline: 1px solid var(--main-white);}
+			.outlined-input input:focus ~ label, .outlined-input select:focus ~ label {    color: var(--main-blue) !important;}
+
+			.outlined-input textarea {    color: var(--main-white);    height: 6rem;  width: 100%;   outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+				background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 15px;    transition: .1s var(--main-ease);
+			}
+			.outlined-input textarea:not(:placeholder-shown) ~ label,.outlined-input textarea:focus ~ label {    top: 0px;    left: 10px;    font-size: 1rem;}
+			.outlined-input textarea:focus {    outline: 1px solid var(--main-blue) !important;}
+			.outlined-input textarea:hover {    outline: 1px solid var(--main-white);}
+			.outlined-input textarea:focus ~ label {    color: var(--main-blue) !important;}
+
+			/* END OUTLINED INPUT STYLES */
+		
+		</STYLE>		
+		 <STYLE>
+			.navbar {  margin: 5px ;   background-color: #555;   overflow: auto; align-items: center; }
+			.navbar a {  float: left;  width: 25%;  padding: 5px;  color: white;  text-align: center;  text-decoration: none;  font-size: 18px;}
+			.navbar a:hover {  background-color: #000;}
+			
+			.active {  background-color: #04AA6D;}
+			TABLE { WIDTH:50%;	MARGIN:30PX AUTO;	BORDER-COLLAPSE: COLLAPSE; TEXT-ALIGN: LEFT; 	}
+			TR 	{ 	BORDER-BOTTOM: 1PX SOLID #CBCBCB; }
+			TH, TD { BORDER: NONE;	HEIGHT: 30PX;	PADDING: 2PX;	}
+			TR:HOVER	{	BACKGROUND: blue;	}
+			.EDITBTN	{  TEXT-DECORATION: NONE;	PADDING: 2PX 5PX;	BACKGROUND: #2E8B57;	COLOR: WHITE;	BORDER-RADIUS:	3PX; 	}	
+			.DLTBTN	{		TEXT-DECORATION: NONE;	PADDING: 2PX 5PX;	BACKGROUND: #800000;	COLOR: WHITE;	BORDER-RADIUS:	3PX; }
+		
+			#eventForm  {   width: 90%; margin: 10px auto ; padding: 10px;  BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX;	
+							display: grid; grid-gap: 5px; grid-template-columns: 60% auto ; 
+			} 
+			.msg	{		WIDTH:40%;	margin: 10px auto;	padding: 5px;	border-radius: 5px;	color: #3c763d;	background: #dff0d8;  border: 1px solid #3c763d;  text-align: center;	}
+					
+			.poster {   width: 95%;  BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX;	
+							display: grid; grid-gap: 5px; grid-template-rows: 80% auto ; 
+			} 
+			.images { width: 100%, padding: 3px ; }
+			.images img {    width: 99%;  margin: 3px auto;  }			
+			
+			@media screen and (max-width: 500px) {  .navbar a {    float: none;    display: block;  }		}
+			
+		</STYLE>
+		
+		

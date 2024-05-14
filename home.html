@@ -4,39 +4,77 @@
 	<head>	<title>  Home 	</title>	<meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
 				<link rel="stylesheet" href="w3.css">
+				<script src="jquery-3.7.0.min.js"></script>		<!--			-->			
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 				<link rel="icon" href="Images/logoWhite.png" >		
 		<STYLE>	
+			.navbar {  margin: 5px ;   background-color: #555;   overflow: auto; align-items: center; }
+			.navbar a {  float: left;  width: 25%;  padding: 5px;  color: white;  text-align: center;  text-decoration: none;  font-size: 18px;}
+			.navbar a:hover {  background-color: #000;}
+			
+			.active {  background-color: #04AA6D;}
+			
+			#mazingiraMap, #gastoniaMap, #kidunduMap	 { height: 360px; } 
+			@media screen and (max-width: 500px) {  .navbar a {    float: none;    display: block;  }		}
+			
 		</STYLE>
+		<!--	mazingiraMap	gastoniaMap		kidunduMap			mazingiraTab		gastoniaTab			kidunduTab		-->
+		<script> $(document).ready(function(){  		
+					$("#mazingiraTab").click(function(){ 	$("#gastoniaMap	, #kidunduMap").hide().fadeOut(50);	;		$("#mazingiraMap").show().fadeIn(100);	;		});										
+					$("#gastoniaTab").click(function(){ 	$("#mazingiraMap , #kidunduMap").hide().fadeOut(50);	;		$("#gastoniaMap").show().fadeIn(100);	;		});										
+					$("#kidunduTab").click(function(){ 	$("#gastoniaMap	, #mazingiraMap").hide().fadeOut(50);	;		$("#kidunduMap").show().fadeIn(100);	;		});										
+					
+				}); 
+				
+				
+			</script> 
+			
 	</head>
 	<body> 
-		<div class="w3-bar w3-top w3-black w3-large " style="z-index:4 ; width: 99%;  margin: 5px ; ">
+		<div class="w3-bar w3-top w3-black w3-large " style="z-index:4 ; width: 99%;  margin:  0px 5px; ">
 		  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
 		  <span class="w3-bar-item w3-left">   
-				<img src="Images/logoBlack.png" class=" w3-margin-right" style="width:65px">
+				<img src="Images/logoBlack.png" class=" w3-margin-right" style="width:45px">
 		  </span>
 		  
 		  <span class="w3-bar-item w3-right">Login</span>
 		  <span class="w3-bar-item w3-right">Notification</span>
 		  
 		</div>
-		<div class="w3-main" style=" width: 99%;  margin: 5px ; margin-top:70px;  background: red; ">
+		<div class="w3-main" style=" width: 99%;  padding: 0px; margin: 5px ; margin-top:45px;  background: #000; ">
 
-			<div class="w3-container w3-row-padding" >
-				<div class="w3-col w3-half w3-blue">
-					<h5>Map</h5>
-					<div  class="w3-container  w3-yellow"  style="  height: 360px; " > 
+			<div class="w3-container" >
+				<div class="w3-col w3-threequarter w3-black" >					<!--	<h5>Map</h5>		-->
+					<div class="w3-col w3-yellow w3-animate-opacity2 maps"  id ='mazingiraMap'  style= "position: relative ; " >	
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.786694442067!2d39.85726437497332!3d-3.636098896337949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fe778aa8160f9%3A0x76a83dcf56b7acf8!2sMazingira%20Park!5e0!3m2!1sen!2ske!4v1715371960921!5m2!1sen!2ske" 
-								width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="w3-col w3-blue w3-animate-opacity2 maps"  id ='gastoniaMap'  style= "position: relative ; display: none; " >	
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31854.803674851544!2d39.809169133112825!3d-3.621631396337216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fdd00679f36e7%3A0x7a14c24acc894ce2!2sGastonia%20Beach!5e0!3m2!1sen!2ske!4v1715462551048!5m2!1sen!2ske" 
+								width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="w3-col w3-green w3-animate-opacity2 maps"  id ='kidunduMap'  style= "position: relative ; display: none;  " >	
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63709.18623587313!2d39.773451704549174!3d-3.6276099869548335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fc300105878f1%3A0x4da5934ac15694f5!2sKidundu!5e0!3m2!1sen!2ske!4v1715463998746!5m2!1sen!2ske"
+								width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>							
+					<div class="w3-container"   style= "position: absolute ;  top: 365px ; left: 30%;  width: 44%;   background: rgb(0, 0, 0); /* Fallback color */
+					  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */	  color: #f1f1f1; padding: 0px; " >	
+						<div class = 'w3-button w3-yellow ' id ='mazingiraTab' style=" width: 32.5%; "> Mazingira Park </div> 
+						<div class = 'w3-button w3-blue'  id ='gastoniaTab'  style=" width: 32.5%; "> Gastonia Beach </div> 
+						<div class = 'w3-button w3-green'  id ='kidunduTab'  style=" width: 32.5%; "> Kidundu Beach </div> 
 					</div> 
 					
 				</div>
+				<!--					
 				<div class="w3-col  w3-quarter w3-black">
 					<h5>Target Area</h5>
-					<div class = 'w3-button w3-block w3-padding w3-margin w3-pink ' style=" width: 80%; "> Mazingira Park </div> 
-					<div class = 'w3-button w3-block w3-padding w3-margin w3-blue' style=" width: 80%; "> Gastonia Beach </div> 
-					<div class = 'w3-button w3-block w3-padding w3-margin w3-green' style=" width: 80%; "> Kidundu Beach </div> 
+					<div class = 'w3-button w3-padding w3-margin w3-pink ' style=" width: 30%; "> Mazingira Park </div> 
+					<div class = 'w3-button w3-padding w3-margin w3-blue' style=" width: 30%; "> Gastonia Beach </div> 
+					<div class = 'w3-button w3-padding w3-margin w3-green' style=" width: 30%; "> Kidundu Beach </div> 
 			
 				</div>			
+				-->
+				
 				<div class=" w3-col w3-quarter w3-white">
 					<h5>Weather</h5>
 					<div class = 'w3-row w3-padding w3-margin w3-pink ' > Rain Patterns </div> 
@@ -45,17 +83,69 @@
 			
 				</div>
 			</div>
-			<div class="w3-container w3-row-padding w3-gray" >
-				<h5>Events</h5>
-				
-				<h5>Report illegal logging</h5>
+			
+			
+			<div class="w3-row w3-gray" >
+				<div class="w3-container w3-col w3-threequarter" > 
+					<h5 class ="  " > <b> Previous Events  </b>  </h5>
+					<p>  No Previous Events </p>
+					 <!--
+					 <div class= "w3-card-2 w3-col l2 w3-white " style="margin: 2px; " >
+					  <img src="Images/sea7.jpg" alt="sea"  style = "width: 100%; "   >
+					  <p>Mangrove Planting on 10th May 2024</p>
+					</div>
+					<!--	
+					<div class="w3-card-2 w3-col l2 w3-white " style="margin: 2px; " >
+					  <img src="Images/sea7.jpg" alt="sea"  style = "width: 100%;"   >
+					  <div class="w3-container w3-center">
+						<p>The Sea</p>
+					  </div>
+					</div>
+					<div class="w3-card-2 w3-col l2 w3-white" style="margin: 2px; " >
+					  <img src="Images/sea7.jpg" alt="sea"  style = "width: 100%;"   >
+					  <div class="w3-container w3-center">
+						<p>The Sea</p>
+					  </div>
+					</div>
+					<div class="w3-card-2 w3-col l2 w3-white" style="margin: 2px; " >
+					  <img src="Images/sea7.jpg" alt="sea"  style = "width: 100%;"   >
+					  <div class="w3-container w3-center">
+						<p>The Sea</p>
+					  </div>
+					</div>					
+					<div class="w3-card-2 w3-col l2 w3-white " style="margin: 2px; " >
+					  <img src="Images/sea7.jpg" alt="sea"  style = "width: 100%;"   >
+					  <div class="w3-container w3-center">
+						<p>The Sea</p>
+					  </div>
+					</div>
+					
+					-->
+					 
+				</div>
+				<div class='w3-container w3-col w3-quarter' > 
+					<h5 class="w3-center" >  <i class="fa fa-fw fa-exclamation-triangle"></i> <b> File a Report  </b> </h5>  <!--     illegal fishing   --> 
+					<button class="w3-left">Illegal Logging</button>
+					<button class="w3-right">Ocean Disaster</button>
+								
+					 
+				</div> 
 			</div>
+			
+		
 		</div>	
 		
-	  <!-- Footer -->
-	  <footer class="w3-container w3-padding w3-light-grey w3-center">
-		<p>Developed by <a href="#" target="_blank">Eng. Samson Khadzeeh Menzah</a></p>
-	  </footer>
-	
+		
+		<div class="w3-container navbar">
+		  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+		  <a href="events.php"><i class="fa fa-fw fa-search"></i> Events </a> 
+		  <a href="growTrees.php"><i class="fa fa-fw fa-envelope"></i> Grow Trees</a> 
+		  <a href="#"><i class="fa fa-fw fa-user"></i> Resources </a>
+		</div>
+		<!-- Footer - ->
+		  <footer class="w3-container w3-light-grey w3-center">
+			<p>Developed by <a href="#" target="_blank">Eng. Samson Khadzeeh Menzah</a></p>
+		  </footer>
+		-->
 	</body>
 </html>

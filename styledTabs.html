@@ -1,0 +1,83 @@
+
+	<!DOCTYPE html>
+			<html>
+				<head>  <title>Staff Page </title>
+			
+				<style>
+					
+					/* Style the tab */
+	.tab {   overflow: hidden;  border: 1px solid #ccc;  background-color: #f1f1f1;}
+	/* Style the buttons inside the tab */
+	.tab button {  background-color: inherit; border-radius: 10px 0px 0px 0px;   float: left;
+	  border: none;  outline: none;  cursor: pointer;  padding: 14px 16px;  transition: 0.3s;  font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {  background-color: cadetblue; z-index:2; border-radius: 10px 0px 0px 0px;   }
+
+	/* Create an active/current tablink class */
+	.tab button.active {  background: green; color: orange; font-size: 1.1em;  border-radius: 10px 0px 0px 0px; border-top: 3px solid blue; }
+
+	/* Style the tab content */
+	.tabcontent {  display: none;  	height: 70vh;  		  padding: 6px 12px;  border: 1px solid #ccc;  border-top: none;   -webkit-animation: fadeEffect 3s;  animation: fadeEffect 3s;}
+
+	//.tab::after {  content: "";  clear: both;  display: table;}
+	
+
+	/* Fade in tabs */
+	@-webkit-keyframes fadeEffect {  from {opacity: 0;}  to {opacity: 1;}}
+	@keyframes fadeEffect {  from {opacity: 0;}  to {opacity: 1;}}
+
+					
+					
+					
+					
+				</style>
+				
+				</head> 
+				<body>
+												
+					<center>
+						<div class="tab">
+						  <button class="tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview </button>
+						  <button class="tablinks" onclick="openTab(event, 'Accounts')">User Account </button>
+						   <button class="tablinks" onclick="openTab(event, 'Vacancies')">Vacancies </button>
+						</div>
+						<div id="Overview" class="tabcontent">
+						  <h3>Staff Dashboard </h3>
+						  <p>Staff Dashboard .</p> 
+						</div>
+						
+						<div id="Accounts" class="tabcontent">
+						  <h3>Accounts</h3>
+						  <p>Accounts is the capital of Japan.</p>
+						</div>
+
+						<div id="Vacancies" class="tabcontent">
+						  <h3>Vacancies</h3>
+						  <p>Vacancies is the capital of Japan.</p>
+						</div>
+
+
+							
+							
+					</center>
+					
+					
+	<script>
+	function openTab(evt, tabName) {  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {    tabcontent[i].style.display = "none";  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {    tablinks[i].className = tablinks[i].className.replace(" active", "");  }
+	  document.getElementById(tabName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+
+	</script>
+	  
+				</body>
+			</html> 
